@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Моят първи сайт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://images.unsplash.com/photo-1621761191319-c6fb62004040");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      border: 2px solid white;
+      padding: 20px 40px;
+      font-size: 22px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .section {
+      padding: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <button onclick="showMessage()">Натисни ме</button>
+  </div>
+
+  <div class="section">
+    <h2>За мен</h2>
+    <p>Това е втората секция на сайта.</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Браво! Това е hero секция 😎");
+    }
+  </script>
+
+</body>
+</html>
